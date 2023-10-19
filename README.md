@@ -36,3 +36,34 @@ Default refresh rate is 90 seconds
 <pre>
   refresh_rate=30
 </pre>
+
+# Plugins
+
+## vcsa_montior
+
+You need to create a config file - vcsa_monitor_config_{VCSA_URL_ip_address}.ini
+<pre>
+#------------------#
+#    properties    #
+#------------------#
+VCENTER=https://{VCSA_URL_ip_address}
+USERNAME="username" #create a specific monitoring user instead
+PASSWORD="password"
+</pre>
+
+### command
+<pre>
+  define command {
+    command_name   vcsa_monitor
+    command_line   /opt/Custom-Nagios-Plugins/vcsa_monitor.sh $HOSTADDRESS$
+    register 1
+}
+</pre>
+
+### Example
+<pre>
+  /opt/Custom-Nagios-Plugins/vcsa_monitor.sh 10.23.34.45
+</pre>
+<pre>
+  One or more health checks are not green (6/8) : applmgmt (green),database-storage (green),load (green),mem (orange),software-packages (green),storage (green),swap (green),system (orange), Please visit https://10.23.34.45:5480/
+</pre>
