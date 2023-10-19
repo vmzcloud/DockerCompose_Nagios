@@ -30,3 +30,9 @@ services:
         soft: 32768
         hard: 32768
 </pre>
+
+## cgi.cfg
+Default refresh rate is 90 seconds
+<pre>
+  refresh_rate=30
+</pre>
