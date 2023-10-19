@@ -41,6 +41,8 @@ Default refresh rate is 90 seconds
 
 ## vcsa_montior
 
+[Reference](https://exchange.nagios.org/directory/Plugins/Operating-Systems/%2A-Virtual-Environments/VMWare/vcsa_monitor-2Esh/details?__hstc=53274167.81f04695664b9dc054b5f524eb53b5a4.1510963200069.1510963200070.1510963200071.1&__hssc=53274167.1.1510963200072&__hsfp=528229161)
+
 You need to create a config file - vcsa_monitor_config_{VCSA_URL_ip_address}.ini
 <pre>
 #------------------#
