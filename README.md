@@ -39,16 +39,29 @@ Default refresh rate is 90 seconds
 
 # conf.d
 
+## objects/hostgroup.cfg
+<pre>
+define hostgroup{
+        hostgroup_name  Project1
+        alias           Project1
+        }
+
+define hostgroup{
+        hostgroup_name  Project2
+        alias           Project2
+        }
+</pre>
+
 ## objects/servicegroup.cfg
 <pre>
 define servicegroup{
-        servicegroup_name  UPS
-        alias              UPS
+        servicegroup_name  Service1
+        alias              Service1
         }
 
 define servicegroup{
-        servicegroup_name  NAS
-        alias              NAS
+        servicegroup_name  Service2
+        alias              Service2
         }
 </pre>
 
