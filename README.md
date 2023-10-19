@@ -37,6 +37,21 @@ Default refresh rate is 90 seconds
   refresh_rate=30
 </pre>
 
+# conf.d
+
+## objects/servicegroup.cfg
+<pre>
+define servicegroup{
+        servicegroup_name  UPS
+        alias              UPS
+        }
+
+define servicegroup{
+        servicegroup_name  NAS
+        alias              NAS
+        }
+</pre>
+
 # Plugins
 
 ## vcsa_montior
