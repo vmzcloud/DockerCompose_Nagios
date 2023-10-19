@@ -39,7 +39,7 @@ Default refresh rate is 90 seconds
 
 # conf.d
 
-## objects/hostgroup.cfg
+## hostgroup
 <pre>
 define hostgroup{
         hostgroup_name  Project1
@@ -52,7 +52,7 @@ define hostgroup{
         }
 </pre>
 
-## objects/servicegroup.cfg
+## servicegroup
 <pre>
 define servicegroup{
         servicegroup_name  Service1
